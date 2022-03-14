@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <!-- main Templates CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- main Templates bootstrap file -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Fonts Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+  <section class="imge__header">
+    <div>
+      <img src="imgs/bg-about.jpg" alt="">
+      <h2 class="title__imge header">Grid Shop</h2>
+    </div>
+  </section>
+  <section>
+    <div class="containr">
+      <div class="row my-5">
+        <div class="col-lg-4 ">
+          <div class="p-5">
+            <div class="col-12">
+              <h6 class="aside-title">Filter by Price</h6>
+              <div class="slidecontainer mt-4">
+                <input type="range" min="1" max="100" value="30">
+                <div class="mt-4 mb-5">
+                  <button class="button__add button-filter">FILTER</button>
+                  <span class="ms-5">Price: $10 $110
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <h6 class="aside-title">Categories</h6>
+              <ul class="list__filter">
+                <li class="d-flex justify-content-between">
+                  <label>
+                    <input class="form-check-input form-check-inline" name="input-group-radio" value="checkbox-1"
+                      type="checkbox"><span class="checkbox-custom-dummy"></span>All
+                  </label><span class="list-shop-filter-number">(18)</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <label>
+                    <input class="form-check-input form-check-inline" name="input-group-radio" value="checkbox-1"
+                      type="checkbox"><span class="checkbox-custom-dummy"></span>Clothing
+                  </label><span class="list-shop-filter-number">(9)</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <label>
+                    <input class="form-check-input form-check-inline" name="input-group-radio" value="checkbox-1"
+                      type="checkbox"><span class="checkbox-custom-dummy"></span>Stivtioner
+                  </label><span class="list-shop-filter-number">(5)</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                  <label>
+                    <input class="form-check-input form-check-inline" name="input-group-radio" value="checkbox-1"
+                      type="checkbox"><span class="checkbox-custom-dummy"></span>stationery
+                  </label><span class="list-shop-filter-number">(8)</span>
+                </li>
+              </ul>
+              <form>
+                <div class="position-relative">
+                  <label class="form__label">Search in shop...</label>
+                  <input class="form__input" id="search-form" type="text" name="s" autocomplete="off">
+                  <button class="button__search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="col-12">
+              <h6 class="aside-title mt-5">POPULAR PRODUCTS</h6>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mb-4">
+                    <div class="row product__main">
+                      <div class="col-lg-4">
+                        <a href="#" class="bg__imge">
+                          <img class=" product__main-item" src="imgs/product-mini-1.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mt-4 ms-3">
+                          <span><a href="#">Red T-Shirt</a></span>
+                          <p class="mt-2">$15.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-4">
+                    <div class="row product__main">
+                      <div class="col-lg-4">
+                        <a href="#" class="bg__imge">
+                          <img class=" product__main-item" src="imgs/product-mini-2.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mt-4 ms-3">
+                          <span><a href="#">Red T-Shirt</a></span>
+                          <p class="mt-2">$15.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-4">
+                    <div class="row product__main">
+                      <div class="col-lg-4">
+                        <a href="#" class="bg__imge">
+                          <img class=" product__main-item" src="imgs/product-mini-3.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="mt-4 ms-3">
+                          <span><a href="#">Red T-Shirt</a></span>
+                          <p class="mt-2">$15.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div>
+            <div class="product-top">
+              <p class="product-top-panel-title">Showing 1–9 of 28 results</p>
+              <div class="d-flex justify-content-between">
+                <select class="border-0 form-select" id="sleect">
+                  <option value="1">Sort by newness</option>
+                  <option value="2">Sort by popularity</option>
+                  <option value="3">Sort by alphabet</option>
+                </select>
+                <div class="ms-3 d-flex justify-content-between">
+                  <div><a id="gridIcon" class="icon"><i class="fa-solid fa-grip"></i></a></div>
+                  <div><a id="listIcon" class="ms-3 icon"><i class="fa-solid fa-list"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div id="gridProduct" class="active">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="product">
+                    <div class="product-body">
+                      <a href="product-details.html"><img src="imgs/product-1.png" alt=""></a>
+                      <h5 class="product-title">
+                        <a href="product-details.html">BLUE T-SHIRT</a>
+                      </h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="product-price-old">$30.00</div>
+                        <div class="product-price">$23.00</div>
+                      </div>
+                      <span class="sale product-badge">SALE</span>
+                    </div>
+                    <div class="product-button-wrap">
+                      <div class="product-button me-3 "><a
+                          class="fa-solid fa-magnifying-glass button-secondary button text-decoration-none"
+                          href="#"></a>
+                      </div>
+                      <div class="product-button"><a
+                          class="fa-solid fa-cart-shopping button-primary button text-decoration-none" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="product">
+                    <div class="product-body">
+                      <a href="product-details.html"><img src="imgs/product-2.png" alt=""></a>
+                      <h5 class="product-title">
+                        <a href="product-details.html">BLUE T-SHIRT</a>
+                      </h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="product-price">$23.00</div>
+                      </div>
+                      <span class="new product-badge">NEW</span>
+                    </div>
+                    <div class="product-button-wrap">
+                      <div class="product-button me-3 "><a
+                          class="fa-solid fa-magnifying-glass button-secondary button text-decoration-none"
+                          href="#"></a>
+                      </div>
+                      <div class="product-button"><a
+                          class="fa-solid fa-cart-shopping button-primary button text-decoration-none" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="product">
+                    <div class="product-body">
+                      <a href="product-details.html"><img src="imgs/product-1.png" alt=""></a>
+                      <h5 class="product-title">
+                        <a href="product-details.html">BLUE T-SHIRT</a>
+                      </h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="product-price">$23.00</div>
+                      </div>
+                    </div>
+                    <div class="product-button-wrap">
+                      <div class="product-button me-3 "><a
+                          class="fa-solid fa-magnifying-glass button-secondary button text-decoration-none"
+                          href="#"></a>
+                      </div>
+                      <div class="product-button"><a
+                          class="fa-solid fa-cart-shopping button-primary button text-decoration-none" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="product">
+                    <div class="product-body">
+                      <a href="product-details.html"><img src="imgs/product-4.png" alt=""></a>
+                      <h5 class="product-title">
+                        <a href="product-details.html">BLUE T-SHIRT</a>
+                      </h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="product-price">$23.00</div>
+                      </div>
+                      <span class="new product-badge">NEW</span>
+                    </div>
+                    <div class="product-button-wrap">
+                      <div class="product-button me-3 "><a
+                          class="fa-solid fa-magnifying-glass button-secondary button text-decoration-none"
+                          href="#"></a>
+                      </div>
+                      <div class="product-button"><a
+                          class="fa-solid fa-cart-shopping button-primary button text-decoration-none" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="product">
+                    <div class="product-body">
+                      <a href="product-details.html"><img src="imgs/product-5.png" alt=""></a>
+                      <h5 class="product-title">
+                        <a href="product-details.html">BLUE T-SHIRT</a>
+                      </h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="product-price">$23.00</div>
+                      </div>
+                    </div>
+                    <div class="product-button-wrap">
+                      <div class="product-button me-3 "><a
+                          class="fa-solid fa-magnifying-glass button-secondary button text-decoration-none"
+                          href="#"></a>
+                      </div>
+                      <div class="product-button"><a
+                          class="fa-solid fa-cart-shopping button-primary button text-decoration-none" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="product">
+                    <div class="product-body">
+                      <a href="product-details.html"><img src="imgs/product-1.png" alt=""></a>
+                      <h5 class="product-title">
+                        <a href="product-details.html">BLUE T-SHIRT</a>
+                      </h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="product-price">$23.00</div>
+                      </div>
+                    </div>
+                    <div class="product-button-wrap">
+                      <div class="product-button me-3 "><a
+                          class="fa-solid fa-magnifying-glass button-secondary button text-decoration-none"
+                          href="#"></a>
+                      </div>
+                      <div class="product-button"><a
+                          class="fa-solid fa-cart-shopping button-primary button text-decoration-none" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="product">
+                    <div class="product-body">
+                      <a href="product-details.html"><img src="imgs/product-1.png" alt=""></a>
+                      <h5 class="product-title">
+                        <a href="product-details.html">BLUE T-SHIRT</a>
+                      </h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="product-price-old">$30.00</div>
+                        <div class="product-price">$23.00</div>
+                      </div>
+                      <span class="sale product-badge">SALE</span>
+                    </div>
+                    <div class="product-button-wrap">
+                      <div class="product-button me-3 "><a
+                          class="fa-solid fa-magnifying-glass button-secondary button text-decoration-none"
+                          href="#"></a>
+                      </div>
+                      <div class="product-button"><a
+                          class="fa-solid fa-cart-shopping button-primary button text-decoration-none" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="product">
+                    <div class="product-body">
+                      <a href="product-details.html"><img class="product__imge" src="imgs/product-1.png" alt=""></a>
+                      <h5 class="product-title">
+                        <a href="product-details.html">BLUE T-SHIRT</a>
+                      </h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="product-price-old">$30.00</div>
+                        <div class="product-price">$23.00</div>
+                      </div>
+                      <span class="sale product-badge">SALE</span>
+                    </div>
+                    <div class="product-button-wrap">
+                      <div class="product-button me-3 "><a
+                          class="fa-solid fa-magnifying-glass button-secondary button text-decoration-none"
+                          href="#"></a>
+                      </div>
+                      <div class="product-button"><a
+                          class="fa-solid fa-cart-shopping button-primary button text-decoration-none" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="product">
+                    <div class="product-body">
+                      <a href="product-details.html"><img src="imgs/product-4.png" alt=""></a>
+                      <h5 class="product-title">
+                        <a href="product-details.html" class="product__title">BLUE T-SHIRT</a>
+                      </h5>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <div class="product-price">$23.00</div>
+                      </div>
+                      <span class="new product-badge">NEW</span>
+                    </div>
+                    <div class="product-button-wrap">
+                      <div class="product-button me-3 "><a
+                          class="fa-solid fa-magnifying-glass button-secondary button text-decoration-none"
+                          href="#"></a>
+                      </div>
+                      <div class="product-button"><a
+                          class="fa-solid fa-cart-shopping button-primary button text-decoration-none" href="#"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="listProduct">
+              <div class="row product-top mb-3 ">
+                <div class="col-lg-12 product__modern">
+                  <div>
+                    <div class="row">
+                      <div class="col-lg-5 bg-imge pt-4 pb-4">
+                        <div class="position-relative">
+                          <a href="product-details.html"><img class="w-100" src="imgs/product-1.png" alt=""></a>
+                          <span class="sale product-badge-modern">SALE</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <div class=" ps-4 pt-4 pb-4">
+                          <h5 class="product-title"><a class="text-decoration-none " href="product-details.html">Blue
+                              T-Shirt</a></h5>
+                          <div class="d-flex align-items-center">
+                            <div class="product-price-old mb-2">$30.00</div>
+                            <div class="product-price mb-2">$23.00</div>
+                          </div>
+                          <p>Sed eleifend, lacus nec bibendum pulvinar, nibh mauris vehicula augue, sit amet mattis
+                            ligula
+                            lorem eu nisl. Integer a egestas</p>
+                          <button class="button__add">ADD TO CART</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 product__modern">
+                  <div>
+                    <div class="row">
+                      <div class="col-lg-5 bg-imge pt-4 pb-4">
+                        <div class="position-relative">
+                          <a href="product-details.html"><img class="w-100" src="imgs/product-1.png" alt=""></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <div class=" ps-4 pt-4 pb-4">
+                          <h5 class="product-title"><a class="text-decoration-none " href="product-details.html">Blue
+                              T-Shirt</a></h5>
+                          <div class="d-flex align-items-center">
+                            <div class="product-price mb-2">$20.00</div>
+                          </div>
+                          <p>Sed eleifend, lacus nec bibendum pulvinar, nibh mauris vehicula augue, sit amet mattis
+                            ligula
+                            lorem eu nisl. Integer a egestas</p>
+                          <button class="button__add">ADD TO CART</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 product__modern">
+                  <div>
+                    <div class="row">
+                      <div class="col-lg-5 bg-imge pt-4 pb-4">
+                        <div class="position-relative">
+                          <a href="product-details.html"><img class="w-100" src="imgs/product-1.png" alt=""></a>
+                          <span class="sale product-badge-modern">SALE</span>
+                        </div>
+                      </div>
+                      <div class="col-lg-7">
+                        <div class=" ps-4 pt-4 pb-4">
+                          <h5 class="product-title"><a class="text-decoration-none " href="product-details.html">Blue
+                              T-Shirt</a></h5>
+                          <div class="d-flex align-items-center">
+                            <div class="product-price-old mb-2">$20.00</div>
+                            <div class="product-price mb-2">$16.00</div>
+                          </div>
+                          <p>Sed eleifend, lacus nec bibendum pulvinar, nibh mauris vehicula augue, sit amet mattis
+                            ligula
+                            lorem eu nisl. Integer a egestas</p>
+                          <button class="button__add">ADD TO CART</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
